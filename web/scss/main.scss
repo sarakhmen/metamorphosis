@@ -1,0 +1,290 @@
+@import "second";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@mixin color {
+  color: #314e59;
+  background: #f3f4ea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+.oleg {
+  font-size: 32px;
+}
+
+.nav {
+  @include color;
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+
+.navbar {
+  &-left {
+    flex-grow: 1;
+    ul {
+      display: flex;
+      font-size: 24px;
+      li {
+        a {
+          color: #314e59;
+          font-weight: 400;
+          margin-right: 32px;
+          font-family: 'Roboto', sans-serif;
+          // &:hover {
+          //   border-bottom: 2px solid #314e59;
+          // }
+          &.active-item {
+            border-bottom: 2px solid #314e59;
+          }
+        }
+      }
+    }
+  }
+  &-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-size: 48px;
+      font-weight: 400;
+      padding-left: 20px;
+    }
+    // padding-right: 160px;
+  }
+  &-right {
+    justify-content: right;
+    align-items: center;
+    flex-grow: 2;
+    display: flex;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 4px solid #314e59;
+  width: 193px;
+  height: 64px;
+  font-size: 24px;
+  color: #314e59;
+  font-weight: 400;
+}
+
+.header {
+  &-content {
+    position: relative;
+    line-height: 0;
+    img {
+      width: 100%;
+    }
+    h1{
+      position: absolute;
+      top: 78px;
+      left: 53px;
+      font: bold 96px 'Nunito'; 
+      color: #D5D9C7
+    }
+    h3{
+      position: absolute;
+      top: 227px;
+      left: 59px;
+      font: normal 32px 'Roboto'; 
+      color: #D5D9C7
+    }
+  }
+}
+
+.main{
+  h2{
+    font-size: 72px; 
+    color: #314e59;
+    padding-top: 140px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  & .classes{
+    text-align: center;
+
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+      li {
+        line-height: 0;
+        position: relative;
+        img{
+          width: 100%;
+          height: auto;
+        }
+        & .class-description{
+          position: absolute;
+          height: 37%;
+          width: 70%;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%);
+          background: rgba(242, 244, 234, 0.75);
+          h3 {
+            position: relative;
+            top: 20%;
+            line-height: 100%;
+            text-align: center;
+            font-size: 48px;
+            color: #314e59;
+          }
+          h4 {
+            position: relative;
+            top: 34%;
+            line-height: 100%;
+            text-align: center;
+            font: normal 24px 'Roboto'; 
+            color: #C15750
+          }
+        }
+      }
+      
+    }
+
+    button{
+      margin-top: 68px;
+    }
+  }
+
+  & .about-gym{
+    position: relative;
+    margin-top: 156px;
+    width: 100%;
+    height: 640px;
+    background-color: #314e59;
+    color: #F2F4EA;
+    & .centered{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1500px;
+      transform:translate(-50%,-50%);
+      h3 {
+        text-align: center;
+        font-size: 28px;
+        padding-bottom: 40px;
+      }
+      p{
+        text-align: center;
+        font: normal 24px 'Roboto'; 
+        line-height: 45px;
+      }
+    }
+  }
+  & .abonements{
+    margin-bottom: 156px;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      // align-content: flex-start;
+      gap: 60px;
+      li.abonement {
+        position: relative;
+        width: 456px;
+        height: 735px;
+        background-color: #F4F8E7;
+        border: 5px solid #314e59;
+        color: #314e59;
+        font-weight: bold;
+        & .content{
+          position: absolute;
+          text-align: center;
+          top: 50%;
+          left: 50%;
+          width: 400px;
+          transform:translate(-50%,-50%);
+          h3 {
+            font-size: 36px;
+            margin: 20px;
+          }
+          p.price{
+            margin: 40px;
+            & .amount{
+              color:#C15750;
+              font-size: 48px;
+            }
+            & .dollar::before{
+              color:#C15750;
+              font-size: 32px;
+              content: "₴";
+            }
+            & .month{
+              color: #8AA0A8;
+              font-size: 20px;
+            }
+          }
+          ul.benefits{
+            display: block;
+            line-height: 2.8;
+            li.benefit{
+              font-size: 24px;
+            }
+          }
+        }
+        button{
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+} 
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 540px;
+  background-color: #314e59;
+  gap: 35px;
+  &-item{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    color: #F2F4EA;
+    font: normal 24px 'Roboto'; 
+    max-width: 550px;
+    & .title{
+      font: normal 48px 'Nunito'; 
+    }
+    &.first{
+      margin-bottom: 25px;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    &-center {
+      h3 {
+        font-size: 34px;
+      }
+    }
+  }
+} ;
