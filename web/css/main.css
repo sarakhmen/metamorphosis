@@ -1,17 +1,259 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "second";
- *   |         ^^^^^^^^
- *   '
- *   scss\main.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"second\";\a   \2502          ^^^^^^^^\a   \2575 \a   scss\\main.scss 1:9  root stylesheet";
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+.oleg {
+  font-size: 32px;
+}
+
+.nav {
+  color: #314e59;
+  background: #f3f4ea;
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.navbar-left {
+  flex-grow: 1;
+}
+.navbar-left ul {
+  display: flex;
+  font-size: 24px;
+}
+.navbar-left ul li a {
+  color: #314e59;
+  font-weight: 400;
+  margin-right: 32px;
+  font-family: "Roboto", sans-serif;
+}
+.navbar-left ul li a.active-item {
+  border-bottom: 2px solid #314e59;
+}
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-center h3 {
+  font-size: 48px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+.navbar-right {
+  justify-content: right;
+  align-items: center;
+  flex-grow: 2;
+  display: flex;
+}
+
+button {
+  background-color: transparent;
+  border: 4px solid #314e59;
+  width: 193px;
+  height: 64px;
+  font-size: 24px;
+  color: #314e59;
+  font-weight: 400;
+}
+
+.header-content {
+  line-height: 0;
+  background-position: center;
+  background-image: url(../img/header.png);
+  background-size: 100%;
+  max-width: fit-content;
+}
+.header-content h1 {
+  font: bold 7vw "Nunito";
+  color: #D5D9C7;
+}
+.header-content h3 {
+  font: normal 2vw "Roboto";
+  color: #D5D9C7;
+}
+
+.main h2 {
+  font-size: 72px;
+  color: #314e59;
+  padding-top: 140px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.main .classes {
+  text-align: center;
+}
+.main .classes ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main .classes ul li {
+  line-height: 0;
+  position: relative;
+}
+.main .classes ul li img {
+  width: 100%;
+  height: auto;
+}
+.main .classes ul li .class-description {
+  position: absolute;
+  height: 37%;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(242, 244, 234, 0.75);
+}
+.main .classes ul li .class-description h3 {
+  position: relative;
+  top: 20%;
+  line-height: 100%;
+  text-align: center;
+  font-size: 48px;
+  color: #314e59;
+}
+.main .classes ul li .class-description h4 {
+  position: relative;
+  top: 34%;
+  line-height: 100%;
+  text-align: center;
+  font: normal 24px "Roboto";
+  color: #C15750;
+}
+.main .classes button {
+  margin-top: 68px;
+}
+.main .about-gym {
+  position: relative;
+  margin-top: 156px;
+  width: 100%;
+  height: 640px;
+  background-color: #314e59;
+  color: #F2F4EA;
+}
+.main .about-gym .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1500px;
+  transform: translate(-50%, -50%);
+}
+.main .about-gym .centered h3 {
+  text-align: center;
+  font-size: 28px;
+  padding-bottom: 40px;
+}
+.main .about-gym .centered p {
+  text-align: center;
+  font: normal 24px "Roboto";
+  line-height: 45px;
+}
+.main .abonements {
+  margin-bottom: 156px;
+}
+.main .abonements ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main .abonements ul li.abonement {
+  position: relative;
+  width: 456px;
+  height: 735px;
+  background-color: #F4F8E7;
+  border: 5px solid #314e59;
+  color: #314e59;
+  font-weight: bold;
+}
+.main .abonements ul li.abonement .content {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+}
+.main .abonements ul li.abonement .content h3 {
+  font-size: 36px;
+  margin: 20px;
+}
+.main .abonements ul li.abonement .content p.price {
+  margin: 40px;
+}
+.main .abonements ul li.abonement .content p.price .amount {
+  color: #C15750;
+  font-size: 48px;
+}
+.main .abonements ul li.abonement .content p.price .dollar::before {
+  color: #C15750;
+  font-size: 32px;
+  content: "₴";
+}
+.main .abonements ul li.abonement .content p.price .month {
+  color: #8AA0A8;
+  font-size: 20px;
+}
+.main .abonements ul li.abonement .content ul.benefits {
+  display: block;
+  line-height: 2.8;
+}
+.main .abonements ul li.abonement .content ul.benefits li.benefit {
+  font-size: 24px;
+}
+.main .abonements ul li.abonement button {
+  margin-top: 80px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 540px;
+  background-color: #314e59;
+  gap: 35px;
+}
+.footer-item {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  color: #F2F4EA;
+  font: normal 24px "Roboto";
+}
+.footer-item .title {
+  font: normal 48px "Nunito";
+}
+.footer-item.first {
+  margin-bottom: 25px;
+}
+.footer-address {
+  max-width: 365px;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-center h3 {
+    font-size: 34px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
