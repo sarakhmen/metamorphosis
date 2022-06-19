@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Метаморфоза</title>
+  <link rel="stylesheet" href="css/info.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/custom-owl-carousel-config.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="navbar-left">
+        <ul>
+          <li><a href="./landing-page.html">Головна</a></li>
+          <li><a href="#" class="active-item">Про нас</a></li>
+          <li><a href="#">Заняття</a></li>
+        </ul>
+      </div>
+      <div class="navbar-center">
+        <img src="img/metamorphosis-logo.svg" alt="Logo" />
+        <h3>Метаморфоза</h3>
+      </div>
+      <div class="navbar-right">
+        <button>Записатися</button>
+      </div>
+      <div class="navbar-menu">
+        <img id="phone" src="./img/phone-nav.svg" alt="phone" />
+        <img id="menu" src="./img/menu.svg" alt="menu" />
+        <img id="cross" src="./img/cross.svg" alt="cross">
+      </div>
+      <div id="navbar-expanded-menu">
+        <ul>
+          <li><a href="#">Головна</a></li>
+          <li><a href="#" class="active-item">Про нас</a></li>
+          <li><a href="#">Заняття</a></li>
+          <li><button>Записатися</button></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header-content">
+      <div class="header-content-text">
+        <h1>Про нас</h1>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="about-metamorphosis">
+      <div class="content">
+        <h3 class="title">ПРО МЕТАМОРФОЗУ</h3>
+        <p class="text">
+          “Більше ніж п’ятсот відвідувачів, 10 кваліфікованих тренерів та 300 м2. Ми боремося за кожну кілокалорію наших
+          відвідувачів. Займатися нелегко, та в Метаморфозі ти відкриєш для себе спорт з іншого боку. Кидай штангу
+          щоєсили, кричи на непідйомні гантелі, бий себе в груди та виривай грушу зі стелі. Випусти всю свою злість,
+          віддайся повністю тренуванню, але виконай поставлений план та рухайся до мети разом з усіма, кого об’єднують
+          стіни мого спортзалу”, — власник Олег Репенко
+        </p>
+      </div>
+      <div class="repenko">
+        <img class="photo" src="./img/repenko.png" />
+        <img class="background" src="./img/repenko-background.png" />
+      </div>
+    </div>
+
+    <div class="why-us">
+      <div class="argumentation">
+        <div class="content">
+          <h3>Чому саме ми?</h3>
+          <p>Наш спортзал пропонує в повному обсязі доступ до всіх спортивних інструментів та аксесуарів: пояси, бинти,
+            лямки, резинки, магнезія та багато іншого завжди доступні для кожного відвідувача. Також ми дотримуємося
+            думки, що гарний зал об’єднує спортсменів майже кожного виду спорту, тому боксери, гімнасти, армреслери,
+            бодібілдери та стронгмени — всі знайдуть з чим попрацювати у нас.</p>
+        </div>
+        <div class="charts">
+          <div class="bar">
+            <div class="outer-rect">
+              <div class="inner-rect fill-95">
+                <h5>Бодібілдинг</h5>
+              </div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="outer-rect">
+              <div class="inner-rect fill-75">
+                <h5>Бокс</h5>
+              </div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="outer-rect">
+              <div class="inner-rect fill-100">
+                <h5>Пауерліфтинг</h5>
+              </div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="outer-rect">
+              <div class="inner-rect fill-45">
+                <h5>Басейн</h5>
+              </div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="outer-rect">
+              <div class="inner-rect fill-90">
+                <h5>Армспорт</h5>
+              </div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="outer-rect">
+              <div class="inner-rect fill-80">
+                <h5>Гімнастика</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Наша команда</h2>
+    <div class="coaches">
+      <ul id="coaches-carousel" class="owl-carousel">
+        <li class="coach">
+          <img src="./img/sergiy-zub.png"/>
+          <div class="description">
+            <h4>Сергій Зуб</h4>
+            <h5>МСМК з пауерліфтингу</h5>
+          </div>
+        </li>
+        <li class="coach">
+          <img src="./img/katerina-hvatko.png"/>
+          <div class="description">
+            <h4>Катерина Хватько</h4>
+            <h5>КМС з кросфіту</h5>
+          </div>
+        </li>
+        <li class="coach">
+          <img src="./img/olena-volochay.png" />
+          <div class="description">
+            <h4>Олена Волочай</h4>
+            <h5>МС з гімнастики</h5>
+          </div>
+        </li>
+        <li class="coach">
+          <img src="./img/viktor-repenko.png" />
+          <div class="description">
+            <h4>Віктор Репенко</h4>
+            <h5>МСМК з легкої атлетики</h5>
+          </div>
+        </li>
+      </ul>
+      <div class="custom-nav-container"></div>
+    </div>
+    <h2>Відгуки</h2>
+    <div class="reviews">
+      <ul id="reviews-carousel" class="owl-carousel">
+        <li class="review">
+          <img class="avatar" src="./img/sokirka-review.png"/>
+          <div class="details">
+            <h4>Кирило Сокирка / .NET Developer</h4>
+            <p>Я завжди думав, що поєднувати 8 годин програмування та 4 години КПІ зі спортом нереально. Велике дякую тренерам, допомогли досягнути першої сотні в жимі лежачи! Не розумію тільки, чому зляться на мене, коли проводжу код-рев’ю їхніх програм.</p>
+          </div>
+        </li>
+        <li class="review">
+          <img class="avatar" src="./img/chuy-review.png"/>
+          <div class="details">
+            <h4>Богдан Чуй / Агроном</h4>
+            <p>Грузив якось ящики з ранніми яблуками і щось вистрілило в спині. Мала запропонувала найняти когось, а я запропонував піти ліпити вареники тихенько. Походив півроку в Метаморфозу, і тепер згадую про спину, тільки коли виконую третю лабораторну з веба.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="custom-dots-container"></div>
+    </div>
+  </div>
+
+
+  </div>
+  <footer class="footer">
+    <div class="footer-item first">
+      <img src="./img/metamorphosis-logo-footer.svg" />
+      <p class="title">Метаморфоза</p>
+    </div>
+    <div class="footer-item">
+      <img src="./img/address-logo.svg" />
+      <p class="footer-address">вул. 3-я Гвардійська, 3, Могилів-Подільський, Вінницька обл.</p>
+    </div>
+    <div class="footer-item">
+      <img src="./img/phone-logo.svg" />
+      <p class="footer-phone">+380971266262</p>
+    </div>
+    <div class="footer-item">
+      <img src="./img/instagram-logo.svg" />
+      <img src="./img/telegram-logo.svg" />
+    </div>
+  </footer>
+
+  <script src="./js/main.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('#coaches-carousel').owlCarousel({
+      responsiveClass: true,
+      nav: true,
+      dots: false,
+      navContainer: '.custom-nav-container',
+      navText: ["&lt;","&gt;"],
+      margin: 30,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 2,
+        },
+        992: {
+          items: 3,
+        },
+        1400: {
+          items: 4,
+          // nav: true,
+        }
+      }
+    })
+  </script>
+  <script>
+    $('#reviews-carousel').owlCarousel({
+      responsiveClass: true,
+      // autoWidth: true,
+      nav: false,
+      dots: true,
+      margin: 30,
+      dotsContainer:'.custom-dots-container',
+      responsive: {
+        0: {
+          items: 1,
+        },
+        1200: {
+          items: 2,
+          dots: false,
+        },
+        1400: {
+          items: 2,
+          dots: false,
+          margin: 60,
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
